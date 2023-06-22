@@ -5,7 +5,7 @@
 
          🔵 pip install virtualenv
    
-   
+    
 📌Criação do ambiente virtual
 
          🔵 python -m venv django-petshop
