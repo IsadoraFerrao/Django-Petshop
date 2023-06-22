@@ -10,7 +10,7 @@
 
          🔵 python -m venv django-petshop
    
-   
+    
 📌Instalação do django
 
          🔵 pip install django
