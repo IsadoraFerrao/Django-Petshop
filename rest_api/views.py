@@ -4,11 +4,15 @@ from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from reserva.models import Reserva
 from rest_api.serializers import AgendamentoModelSerializer
-# Create your views here.
+#from rest_framework.authentication import TokenAuthentication
+#from rest_framework.permissions import IsAuthenticated
 
+# Create your views here.
 class AgendamentoModelViewSet(ModelViewSet):
     queryset = Reserva.objects.all()
     serializer_class = AgendamentoModelSerializer
+    #authentication_classes = [TokenAuthentication]
+    #permission_classes = [IsAuthenticated]
 
 @api_view(['GET', 'POST']) #essa api pode ser acessada pelos métodos get e post
 def hello_world(request):
