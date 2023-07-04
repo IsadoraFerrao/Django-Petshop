@@ -31,9 +31,9 @@ class Reserva(models.Model):
         verbose_name = 'Reserva de banho'
         verbose_name_plural = 'Reservas de banho'
         
-    
 class Petshop(models.Model):
     nome = models.CharField(verbose_name='Petshop', max_length=50)
     rua = models.CharField(verbose_name='Endereço', max_length=150)
     numero = models.CharField(verbose_name='Número', max_length=10)
     bairro = models.CharField(verbose_name='Bairro', max_length=50)
+
