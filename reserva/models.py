@@ -25,7 +25,7 @@ class Reserva(models.Model):
         blank=True,
         null=True                          
     )
-    def __str__(self):
+    def __str__(self): 
         return f'{self.nome}: {self.data} - {self.turno}'
     class Meta:
         verbose_name = 'Reserva de banho'
@@ -39,5 +39,6 @@ class Petshop(models.Model):
 
 
     def qtd_reserva(self):
+            print()
             return self.reservas.count()
     
