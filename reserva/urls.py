@@ -5,3 +5,4 @@ app_name = 'reserva'
 urlpatterns = [
     path('criar/', criar_reserva, name='criar_reserva')
 ]
+
