@@ -18,7 +18,7 @@ class AgendamentoModelViewSet(ModelViewSet):
     queryset = Reserva.objects.all()
     serializer_class = AgendamentoModelSerializer
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
 @api_view(['GET', 'POST']) #essa api pode ser acessada pelos métodos get e post
 def hello_world(request):

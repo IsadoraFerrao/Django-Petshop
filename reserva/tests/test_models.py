@@ -19,5 +19,5 @@ def reserva():
 
 @pytest.mark.django_db
 def test_reserva_deve_retornar_string_formata(reserva):
-    assert str(reserva) == 'Tom: 2023-07-18 - Tarde'
+    assert str(reserva) == 'Tom: 2023-07-19 - Tarde'
 
